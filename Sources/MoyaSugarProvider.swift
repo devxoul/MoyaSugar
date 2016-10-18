@@ -8,6 +8,9 @@
 
 import Moya
 
+/// `MoyaSugarProvider` overrides `parameterEncoding` and `httpHeaderFields` of the
+/// `endpointClosure` with `SugarTargetType`. `MoyaSugarProvider` can be used only with
+/// `SugarTargetType`.
 open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
 
   override public init(

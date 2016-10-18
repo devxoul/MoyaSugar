@@ -8,6 +8,16 @@
 
 import Moya
 
+/// `Parameters` has parameter encoding and values. Use `=>` operator for syntactic sugar.
+///
+/// Example:
+///
+/// ```
+/// JSONEncoding() => [
+///   "key1": "value1"
+///   "key2": "value2"
+/// ]
+/// ```
 public struct Parameters {
   public var encoding: ParameterEncoding
   public var values: [String: Any]

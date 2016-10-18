@@ -8,6 +8,13 @@
 
 import Moya
 
+/// `Route` has HTTP method and URL path.
+///
+/// Example:
+///
+/// ```
+/// .GET("/me")
+/// ```
 public enum Route {
   case GET(String)
   case POST(String)
