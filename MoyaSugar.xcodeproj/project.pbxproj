@@ -19,22 +19,40 @@
 		0377285B1DB4EC430019BAA2 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037728511DB4EBE60019BAA2 /* Parameters.swift */; };
 		0377285C1DB4EC450019BAA2 /* SugarTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377284F1DB4EBCB0019BAA2 /* SugarTargetType.swift */; };
 		0377285D1DB4EC470019BAA2 /* MoyaSugarProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037728531DB4EC0F0019BAA2 /* MoyaSugarProvider.swift */; };
+		037728601DB4F1A10019BAA2 /* ParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377285E1DB4F1240019BAA2 /* ParametersTests.swift */; };
+		037728611DB4F1A50019BAA2 /* ParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377285E1DB4F1240019BAA2 /* ParametersTests.swift */; };
+		037728621DB4F1A70019BAA2 /* ParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377285E1DB4F1240019BAA2 /* ParametersTests.swift */; };
 		03B724B91DB4C7B80059D743 /* MoyaSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B724B71DB4C7B80059D743 /* MoyaSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03B724BD1DB4C82B0059D743 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724BC1DB4C82B0059D743 /* Route.swift */; };
 		03B724D61DB4CC870059D743 /* MoyaSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B724A41DB4C7290059D743 /* MoyaSugar.framework */; };
-		03B724DF1DB4CCDE0059D743 /* MoyaSugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* MoyaSugarTests.swift */; };
+		03B724DF1DB4CCDE0059D743 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* RouteTests.swift */; };
 		03B724F61DB4D0130059D743 /* MoyaSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B724E51DB4CFF50059D743 /* MoyaSugar.framework */; };
 		03B725201DB4D0660059D743 /* MoyaSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B7250F1DB4D05E0059D743 /* MoyaSugar.framework */; };
 		03B7252C1DB4D0B10059D743 /* MoyaSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B724B71DB4C7B80059D743 /* MoyaSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03B7252D1DB4D0D30059D743 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724BC1DB4C82B0059D743 /* Route.swift */; };
 		03B7252E1DB4D10D0059D743 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724BC1DB4C82B0059D743 /* Route.swift */; };
 		03B7252F1DB4D1120059D743 /* MoyaSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B724B71DB4C7B80059D743 /* MoyaSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03B725301DB4D1170059D743 /* MoyaSugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* MoyaSugarTests.swift */; };
-		03B725311DB4D11B0059D743 /* MoyaSugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* MoyaSugarTests.swift */; };
+		03B725301DB4D1170059D743 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* RouteTests.swift */; };
+		03B725311DB4D11B0059D743 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724DD1DB4CCBB0059D743 /* RouteTests.swift */; };
 		03B725321DB4D11F0059D743 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B724BC1DB4C82B0059D743 /* Route.swift */; };
 		03B725331DB4D1200059D743 /* MoyaSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B724B71DB4C7B80059D743 /* MoyaSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03DC8CAA1DB5F58900A4FACE /* SugarTargetTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CA81DB5F57F00A4FACE /* SugarTargetTypeTests.swift */; };
+		03DC8CAB1DB5F58C00A4FACE /* SugarTargetTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CA81DB5F57F00A4FACE /* SugarTargetTypeTests.swift */; };
+		03DC8CAC1DB5F58E00A4FACE /* SugarTargetTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CA81DB5F57F00A4FACE /* SugarTargetTypeTests.swift */; };
+		03DC8CB01DB6144300A4FACE /* MoyaSugarProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CAD1DB6143800A4FACE /* MoyaSugarProviderTests.swift */; };
+		03DC8CB11DB6144600A4FACE /* MoyaSugarProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CAD1DB6143800A4FACE /* MoyaSugarProviderTests.swift */; };
+		03DC8CB21DB6144900A4FACE /* MoyaSugarProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CAD1DB6143800A4FACE /* MoyaSugarProviderTests.swift */; };
+		03DC8CB51DB6179300A4FACE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CB31DB6174100A4FACE /* GitHubAPI.swift */; };
+		03DC8CB61DB6179600A4FACE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CB31DB6174100A4FACE /* GitHubAPI.swift */; };
+		03DC8CB71DB6179800A4FACE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC8CB31DB6174100A4FACE /* GitHubAPI.swift */; };
 		0AF617F3AF931927093CC767 /* Pods_MoyaSugar_MoyaSugar_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74ECEB651984216FC2AA7DC1 /* Pods_MoyaSugar_MoyaSugar_tvOS.framework */; };
+		0D8F929FD7E47307A6CF3505 /* Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92238BCB51D5B67BDC6F5DB /* Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework */; };
+		0DABC4EC7D27EB2537F2165C /* Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8D960A2D007F5410A565BE /* Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework */; };
+		41213DB44619BF12187F22B6 /* Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD4E4424C557AEB56A3C2E4 /* Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework */; };
+		6733EA91BE4BD96E5CB6E214 /* Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67091A20C11E286383B77972 /* Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework */; };
 		8F926BC87DD1D7A2524641E8 /* Pods_MoyaSugar_MoyaSugar_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A67E90A0DA42C3DD0B1854 /* Pods_MoyaSugar_MoyaSugar_watchOS.framework */; };
+		A689368CE98AF55A6D345107 /* Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975AEBC2B87C22FF3FE7AD9B /* Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework */; };
+		EE88BE85E5CB0B98C000DE46 /* Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7EADC45E52386D1BCBC31C /* Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework */; };
 		EEF8FBFB8E695505A8B5FF5C /* Pods_MoyaSugar_MoyaSugar_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B510282E52C3BA069AA7EE09 /* Pods_MoyaSugar_MoyaSugar_iOS.framework */; };
 		FE9B5E75811103F81F8C0F4E /* Pods_MoyaSugar_MoyaSugar_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB57E48DB5326E7780743402 /* Pods_MoyaSugar_MoyaSugar_macOS.framework */; };
 /* End PBXBuildFile section */
@@ -67,12 +85,13 @@
 		0377284F1DB4EBCB0019BAA2 /* SugarTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarTargetType.swift; sourceTree = "<group>"; };
 		037728511DB4EBE60019BAA2 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		037728531DB4EC0F0019BAA2 /* MoyaSugarProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaSugarProvider.swift; sourceTree = "<group>"; };
+		0377285E1DB4F1240019BAA2 /* ParametersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersTests.swift; sourceTree = "<group>"; };
 		03B724A41DB4C7290059D743 /* MoyaSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B724B71DB4C7B80059D743 /* MoyaSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoyaSugar.h; sourceTree = "<group>"; };
 		03B724BA1DB4C7D40059D743 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		03B724BC1DB4C82B0059D743 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		03B724D11DB4CC870059D743 /* MoyaSugar-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaSugar-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03B724DD1DB4CCBB0059D743 /* MoyaSugarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaSugarTests.swift; sourceTree = "<group>"; };
+		03B724DD1DB4CCBB0059D743 /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
 		03B724E51DB4CFF50059D743 /* MoyaSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B724F11DB4D0130059D743 /* MoyaSugar-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MoyaSugar-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B725011DB4D01C0059D743 /* MoyaSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,17 +100,38 @@
 		03B725261DB4D0A50059D743 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		03B725271DB4D0A50059D743 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		03B725281DB4D0A50059D743 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		03DC8CA81DB5F57F00A4FACE /* SugarTargetTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarTargetTypeTests.swift; sourceTree = "<group>"; };
+		03DC8CAD1DB6143800A4FACE /* MoyaSugarProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaSugarProviderTests.swift; sourceTree = "<group>"; };
+		03DC8CB31DB6174100A4FACE /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		1E988BD783189CB01E199EA6 /* Pods-MoyaSugar-MoyaSugar-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-watchOS/Pods-MoyaSugar-MoyaSugar-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		1EF642FFEF118364B4BEFBB9 /* Pods-MoyaSugar-MoyaSugar-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-macOS/Pods-MoyaSugar-MoyaSugar-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		2BA44CA1BE57EEDE7012F960 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F68DE9CC1F86847DE08BCED /* Pods-MoyaSugar-MoyaSugar-tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-tvOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-MoyaSugar-tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		32E6300EB12F87F549C5DFFE /* Pods-MoyaSugar-MoyaSugar-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-tvOS/Pods-MoyaSugar-MoyaSugar-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3F1B8C2EA3A3A0DC49337E38 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4FD4E4424C557AEB56A3C2E4 /* Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		557786A4C11CEFA3EF6ACA21 /* Pods-MoyaSugar-MoyaSugar-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-tvOS/Pods-MoyaSugar-MoyaSugar-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5BD165756E5B8C3772C7BE6D /* Pods-MoyaSugar-MoyaSugar-macOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-macOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-macOS-Tests/Pods-MoyaSugar-MoyaSugar-macOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C9E41442B7952D8B1E64A38 /* Pods-MoyaSugar-MoyaSugar-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-macOS/Pods-MoyaSugar-MoyaSugar-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5F8D960A2D007F5410A565BE /* Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDF37131A5860B7F32C6649 /* Pods-MoyaSugar-MoyaSugar-macOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-macOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-macOS-Tests/Pods-MoyaSugar-MoyaSugar-macOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		67091A20C11E286383B77972 /* Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ECEB651984216FC2AA7DC1 /* Pods_MoyaSugar_MoyaSugar_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2C90E022C5550B72AAF495 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C341ED23F181C014BB85279 /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		975AEBC2B87C22FF3FE7AD9B /* Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F685C78566D24AFD9D314AA /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7EADC45E52386D1BCBC31C /* Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B510282E52C3BA069AA7EE09 /* Pods_MoyaSugar_MoyaSugar_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92238BCB51D5B67BDC6F5DB /* Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15AB16B92DFF8EBFBC908DD /* Pods-MoyaSugar-MoyaSugar-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-iOS/Pods-MoyaSugar-MoyaSugar-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D8CABB4AFD7B11F36CFB1AA3 /* Pods-MoyaSugar-MoyaSugar-iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-iOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-iOS-Tests/Pods-MoyaSugar-MoyaSugar-iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB57E48DB5326E7780743402 /* Pods_MoyaSugar_MoyaSugar_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3A83E912950D0E8EFDAE00 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E5A67E90A0DA42C3DD0B1854 /* Pods_MoyaSugar_MoyaSugar_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaSugar_MoyaSugar_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62B3EDE25A76FCB3F204A9 /* Pods-MoyaSugar-MoyaSugar-iOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-iOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-iOS-Tests/Pods-MoyaSugar-MoyaSugar-iOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F00DB75F53401AA557ED4ABA /* Pods-MoyaSugar-MoyaSugar-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-iOS/Pods-MoyaSugar-MoyaSugar-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FD4B58EB578A9717BE6F5065 /* Pods-MoyaSugar-MoyaSugar-tvOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-tvOS-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-MoyaSugar-tvOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDE02D5AFEDD7B628F324AA /* Pods-MoyaSugar-MoyaSugar-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaSugar-MoyaSugar-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-watchOS/Pods-MoyaSugar-MoyaSugar-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B724D61DB4CC870059D743 /* MoyaSugar.framework in Frameworks */,
+				0DABC4EC7D27EB2537F2165C /* Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework in Frameworks */,
+				A689368CE98AF55A6D345107 /* Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B724F61DB4D0130059D743 /* MoyaSugar.framework in Frameworks */,
+				0D8F929FD7E47307A6CF3505 /* Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework in Frameworks */,
+				EE88BE85E5CB0B98C000DE46 /* Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B725201DB4D0660059D743 /* MoyaSugar.framework in Frameworks */,
+				41213DB44619BF12187F22B6 /* Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework in Frameworks */,
+				6733EA91BE4BD96E5CB6E214 /* Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +253,11 @@
 		03B724DC1DB4CCBB0059D743 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				03B724DD1DB4CCBB0059D743 /* MoyaSugarTests.swift */,
+				03DC8CB31DB6174100A4FACE /* GitHubAPI.swift */,
+				03B724DD1DB4CCBB0059D743 /* RouteTests.swift */,
+				0377285E1DB4F1240019BAA2 /* ParametersTests.swift */,
+				03DC8CA81DB5F57F00A4FACE /* SugarTargetTypeTests.swift */,
+				03DC8CAD1DB6143800A4FACE /* MoyaSugarProviderTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -223,6 +273,18 @@
 				32E6300EB12F87F549C5DFFE /* Pods-MoyaSugar-MoyaSugar-tvOS.release.xcconfig */,
 				FEDE02D5AFEDD7B628F324AA /* Pods-MoyaSugar-MoyaSugar-watchOS.debug.xcconfig */,
 				1E988BD783189CB01E199EA6 /* Pods-MoyaSugar-MoyaSugar-watchOS.release.xcconfig */,
+				EF62B3EDE25A76FCB3F204A9 /* Pods-MoyaSugar-MoyaSugar-iOS-Tests.debug.xcconfig */,
+				D8CABB4AFD7B11F36CFB1AA3 /* Pods-MoyaSugar-MoyaSugar-iOS-Tests.release.xcconfig */,
+				5FDF37131A5860B7F32C6649 /* Pods-MoyaSugar-MoyaSugar-macOS-Tests.debug.xcconfig */,
+				5BD165756E5B8C3772C7BE6D /* Pods-MoyaSugar-MoyaSugar-macOS-Tests.release.xcconfig */,
+				FD4B58EB578A9717BE6F5065 /* Pods-MoyaSugar-MoyaSugar-tvOS-Tests.debug.xcconfig */,
+				2F68DE9CC1F86847DE08BCED /* Pods-MoyaSugar-MoyaSugar-tvOS-Tests.release.xcconfig */,
+				7F2C90E022C5550B72AAF495 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.debug.xcconfig */,
+				DF3A83E912950D0E8EFDAE00 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.release.xcconfig */,
+				2BA44CA1BE57EEDE7012F960 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig */,
+				3F1B8C2EA3A3A0DC49337E38 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig */,
+				8C341ED23F181C014BB85279 /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig */,
+				9F685C78566D24AFD9D314AA /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -234,6 +296,12 @@
 				DB57E48DB5326E7780743402 /* Pods_MoyaSugar_MoyaSugar_macOS.framework */,
 				74ECEB651984216FC2AA7DC1 /* Pods_MoyaSugar_MoyaSugar_tvOS.framework */,
 				E5A67E90A0DA42C3DD0B1854 /* Pods_MoyaSugar_MoyaSugar_watchOS.framework */,
+				5F8D960A2D007F5410A565BE /* Pods_MoyaSugar_MoyaSugar_iOS_Tests.framework */,
+				B92238BCB51D5B67BDC6F5DB /* Pods_MoyaSugar_MoyaSugar_macOS_Tests.framework */,
+				4FD4E4424C557AEB56A3C2E4 /* Pods_MoyaSugar_MoyaSugar_tvOS_Tests.framework */,
+				975AEBC2B87C22FF3FE7AD9B /* Pods_MoyaSugar_Tests_MoyaSugar_iOS_Tests.framework */,
+				9F7EADC45E52386D1BCBC31C /* Pods_MoyaSugar_Tests_MoyaSugar_macOS_Tests.framework */,
+				67091A20C11E286383B77972 /* Pods_MoyaSugar_Tests_MoyaSugar_tvOS_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -300,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03B724D91DB4CC870059D743 /* Build configuration list for PBXNativeTarget "MoyaSugar-iOS-Tests" */;
 			buildPhases = (
+				62642C48663DC1E08DA65FDD /* [CP] Check Pods Manifest.lock */,
 				03B724CD1DB4CC870059D743 /* Sources */,
 				03B724CE1DB4CC870059D743 /* Frameworks */,
 				03B724CF1DB4CC870059D743 /* Resources */,
+				2F6A0C0B9D65E51EFD27B563 /* [CP] Embed Pods Frameworks */,
+				01EA19088CBCB11162D8097B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,9 +409,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03B724F91DB4D0130059D743 /* Build configuration list for PBXNativeTarget "MoyaSugar-macOS-Tests" */;
 			buildPhases = (
+				A009FE1427D4F89CFAB414A5 /* [CP] Check Pods Manifest.lock */,
 				03B724ED1DB4D0130059D743 /* Sources */,
 				03B724EE1DB4D0130059D743 /* Frameworks */,
 				03B724EF1DB4D0130059D743 /* Resources */,
+				50EE5851F2E5C07BBAEC4598 /* [CP] Embed Pods Frameworks */,
+				977897483195044AF63D79D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,9 +470,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03B725231DB4D0660059D743 /* Build configuration list for PBXNativeTarget "MoyaSugar-tvOS-Tests" */;
 			buildPhases = (
+				21419F966A08FC5132A5141C /* [CP] Check Pods Manifest.lock */,
 				03B725171DB4D0660059D743 /* Sources */,
 				03B725181DB4D0660059D743 /* Frameworks */,
 				03B725191DB4D0660059D743 /* Resources */,
+				AB9020A11F62633501D767CD /* [CP] Embed Pods Frameworks */,
+				5255AB07EDE28D03219E0294 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -527,6 +604,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01EA19088CBCB11162D8097B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		14BFE903C63BB51136D98AA5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,6 +632,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-iOS/Pods-MoyaSugar-MoyaSugar-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21419F966A08FC5132A5141C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		26762AB5A927BCC9DB63CE9F /* [CP] Check Pods Manifest.lock */ = {
@@ -572,6 +679,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		2F6A0C0B9D65E51EFD27B563 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		42FFF475C44B7CFF1ADC7A05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,6 +724,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-MoyaSugar-macOS/Pods-MoyaSugar-MoyaSugar-macOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		50EE5851F2E5C07BBAEC4598 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5255AB07EDE28D03219E0294 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62642C48663DC1E08DA65FDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8F016B9830C130BDA7EFF879 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +782,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		977897483195044AF63D79D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A009FE1427D4F89CFAB414A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9020A11F62633501D767CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests/Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD5386AA42E1007C9DCA2BFC /* [CP] Copy Pods Resources */ = {
@@ -665,7 +877,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B724DF1DB4CCDE0059D743 /* MoyaSugarTests.swift in Sources */,
+				03DC8CB51DB6179300A4FACE /* GitHubAPI.swift in Sources */,
+				03B724DF1DB4CCDE0059D743 /* RouteTests.swift in Sources */,
+				037728601DB4F1A10019BAA2 /* ParametersTests.swift in Sources */,
+				03DC8CAA1DB5F58900A4FACE /* SugarTargetTypeTests.swift in Sources */,
+				03DC8CB21DB6144900A4FACE /* MoyaSugarProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +900,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B725301DB4D1170059D743 /* MoyaSugarTests.swift in Sources */,
+				03DC8CB61DB6179600A4FACE /* GitHubAPI.swift in Sources */,
+				03B725301DB4D1170059D743 /* RouteTests.swift in Sources */,
+				037728611DB4F1A50019BAA2 /* ParametersTests.swift in Sources */,
+				03DC8CAB1DB5F58C00A4FACE /* SugarTargetTypeTests.swift in Sources */,
+				03DC8CB11DB6144600A4FACE /* MoyaSugarProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +934,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B725311DB4D11B0059D743 /* MoyaSugarTests.swift in Sources */,
+				03DC8CB71DB6179800A4FACE /* GitHubAPI.swift in Sources */,
+				03B725311DB4D11B0059D743 /* RouteTests.swift in Sources */,
+				037728621DB4F1A70019BAA2 /* ParametersTests.swift in Sources */,
+				03DC8CAC1DB5F58E00A4FACE /* SugarTargetTypeTests.swift in Sources */,
+				03DC8CB01DB6144300A4FACE /* MoyaSugarProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +1107,7 @@
 		};
 		03B724DA1DB4CC870059D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2C90E022C5550B72AAF495 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Supporting Files/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -894,6 +1119,7 @@
 		};
 		03B724DB1DB4CC870059D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3A83E912950D0E8EFDAE00 /* Pods-MoyaSugar-Tests-MoyaSugar-iOS-Tests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Supporting Files/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -951,6 +1177,7 @@
 		};
 		03B724FA1DB4D0130059D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA44CA1BE57EEDE7012F960 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -967,6 +1194,7 @@
 		};
 		03B724FB1DB4D0130059D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1B8C2EA3A3A0DC49337E38 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1073,6 +1301,7 @@
 		};
 		03B725241DB4D0660059D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C341ED23F181C014BB85279 /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-tvOS.plist";
@@ -1087,6 +1316,7 @@
 		};
 		03B725251DB4D0660059D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F685C78566D24AFD9D314AA /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-tvOS.plist";

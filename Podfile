@@ -9,6 +9,14 @@ abstract_target 'MoyaSugar' do
   target 'MoyaSugar-macOS'
   target 'MoyaSugar-tvOS'
   target 'MoyaSugar-watchOS'
+
+  abstract_target 'Tests' do
+    pod 'Then', '~> 2.1'
+
+    target 'MoyaSugar-iOS-Tests'
+    target 'MoyaSugar-macOS-Tests'
+    target 'MoyaSugar-tvOS-Tests'
+  end
 end
 
 post_install do |installer|
