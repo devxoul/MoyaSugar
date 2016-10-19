@@ -6,7 +6,43 @@
 
 Syntactic sugar for Moya.
 
+## Why?
+
+[Moya](https://github.com/Moya/Moya) is an elegant network abstraction layer which abstracts API endpoints gracefully with `enum`. However, it would become massive when the application is getting larger. **Whenever you add an endpoint, you should write code at least 4 places: enum case, `method`, `path`, and `parameters` property.** It makes you scroll down again and again. Besides, if you would like to set different parameter encodings or HTTP header fields, you should customize `endpointClosure` of `MoyaProvider`.
+
+If you're as lazy as I am, MoyaSugar is for you.
+
 ## At a Glance
+
+Forget about `method`, `path`, `parameters`, and `endpointClosure`. Use `route`, `params`, `httpHeaderFields` instead.
+
+```swift
+extension MyService: SugarTargetType {
+  var route: Route {
+    return .GET("/me")
+  }
+
+  var params: Parameters? {
+    return JSONEncoding() => [
+      "username": "devxoul",
+      "password": "****",
+    ]
+  }
+
+  var httpHeaderFields: [String: String]? {
+    return ["Accept": "application/json"]
+  }
+}
+```
+
+Use `MoyaSugarProvider` instead of `MoyaProvider`.
+
+```swift
+let provider = MoyaSugarProvider<MyService>()
+let provider = RxMoyaSugarProvider<MyService>() // If you're using Moya/RxSwift
+```
+
+## Complete Example
 
 ```swift
 import Moya
@@ -18,9 +54,9 @@ enum GitHubAPI {
   case editIssue(owner: String, repo: String, number: Int, title: String?, body: String?)
 }
 
-extension SugarTargetType {
+extension GitHubAPI : SugarTargetType {
 
-  /// Method + Path
+  /// method + path
   var route: Route {
     switch self {
     case .userRepos(let owner):
@@ -34,7 +70,7 @@ extension SugarTargetType {
     }
   }
   
-  /// Encoding + Parameter
+  /// encoding + parameters
   var params: Parameters? {
     switch self {
     case .userRepos:
@@ -47,7 +83,8 @@ extension SugarTargetType {
       ]
 
     case .editIssue(_, _, _, let title, let body):
-      return /*(default) URLEncoding =>*/ [
+      // Use `URLEncoding()` as default when not specified
+      return [
         "title": title,
         "body": body,
       ]
@@ -118,9 +155,23 @@ extension SugarTargetType {
 
     ```swift
     var httpHeaderFields: [String: String]? {
-     return ["Accept": "application/json"]
+      return ["Accept": "application/json"]
     }
     ```
+
+## Requirements
+
+Same with [Moya](https://github.com/Moya/Moya)
+
+## Installation
+
+- **Using [CocoaPods](https://cocoapods.org)**:
+
+    ```ruby
+    pod 'MoyaSugar', '~> 0.1'
+    ```
+
+> MoyaSugar currently doesn't cupport Carthage and Swift Package Manager.
 
 ## License
 
