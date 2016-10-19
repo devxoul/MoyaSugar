@@ -5,11 +5,19 @@ sudo: false
 env:
   global:
     - WORKSPACE="MoyaSugar.xcworkspace"
+    - IOS_SDK="iphonesimulator10.0"
+    - MACOS_SDK="macosx10.12"
+    - WATCHOS_SDK="watchsimulator3.0"
+    - TVOS_SDK="appletvsimulator10.0"
   matrix:
-    - SCHEME="MoyaSugar-iOS"      SDK="iphonesimulator10.0"
-    - SCHEME="MoyaSugar-macOS"    SDK="macosx10.12"
-    - SCHEME="MoyaSugar-watchOS"  SDK="watchsimulator3.0"
-    - SCHEME="MoyaSugar-tvOS"     SDK="appletvsimulator10.0"
+    - SCHEME="MoyaSugar-iOS"      SDK="$IOS_SDK"
+    - SCHEME="MoyaSugar-macOS"    SDK="$MACOS_SDK"
+    - SCHEME="MoyaSugar-watchOS"  SDK="$WATCHOS_SDK"
+    - SCHEME="MoyaSugar-tvOS"     SDK="$TVOS_SDK"
+    - SCHEME="RxMoyaSugar-iOS"      SDK="$IOS_SDK"
+    - SCHEME="RxMoyaSugar-macOS"    SDK="$MACOS_SDK"
+    - SCHEME="RxMoyaSugar-watchOS"  SDK="$WATCHOS_SDK"
+    - SCHEME="RxMoyaSugar-tvOS"     SDK="$TVOS_SDK"
 
 script:
   - xcodebuild clean build -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
