@@ -1,7 +1,7 @@
 abstract_target 'MoyaSugar' do
   use_frameworks!
 
-  pod 'Moya', '8.0.0-beta.2'
+  pod 'Moya', '8.0.0-beta.3'
 
   target 'MoyaSugar-iOS'
   target 'MoyaSugar-macOS'
@@ -17,7 +17,7 @@ abstract_target 'MoyaSugar' do
   end
 
   abstract_target 'RxMoyaSugar' do
-    pod 'Moya/RxSwift', '8.0.0-beta.2'
+    pod 'Moya/RxSwift', '8.0.0-beta.3'
     pod 'RxSwift', '3.0.0-rc.1'
 
     target 'RxMoyaSugar-iOS'
