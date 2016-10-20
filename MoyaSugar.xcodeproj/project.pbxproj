@@ -1563,7 +1563,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD8463E4872EDBDCD2CAB6A6 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-macOS.plist";
@@ -1580,7 +1579,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04E85CDB5474A3691249CA33 /* Pods-MoyaSugar-Tests-MoyaSugar-macOS-Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-macOS.plist";
@@ -1687,7 +1685,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFE14FB610AA50A1B97DE8FA /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.MoyaSugar-tvOS-Tests";
@@ -1702,7 +1699,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAD2FFE1E9F13A2B371B2B66 /* Pods-MoyaSugar-Tests-MoyaSugar-tvOS-Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Supporting Files/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.xoul.MoyaSugar-tvOS-Tests";
