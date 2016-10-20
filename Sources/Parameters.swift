@@ -6,6 +6,7 @@
 //  Copyright © 2016 Suyeol Jeon. All rights reserved.
 //
 
+import Alamofire
 import Moya
 
 /// `Parameters` has parameter encoding and values. Use `=>` operator for syntactic sugar.
@@ -19,10 +20,10 @@ import Moya
 /// ]
 /// ```
 public struct Parameters {
-  public var encoding: ParameterEncoding
+  public var encoding: Alamofire.ParameterEncoding
   public var values: [String: Any]
 
-  public init(encoding: ParameterEncoding, values: [String: Any]) {
+  public init(encoding: Alamofire.ParameterEncoding, values: [String: Any]) {
     self.encoding = encoding
     self.values = values
   }
@@ -34,12 +35,12 @@ extension Parameters: ExpressibleByDictionaryLiteral {
     for (key, value) in elements {
       values[key] = value
     }
-    self.init(encoding: URLEncoding(), values: values)
+    self.init(encoding: Alamofire.URLEncoding(), values: values)
   }
 }
 
 infix operator =>
 
-public func => (encoding: ParameterEncoding, values: [String: Any]) -> Parameters {
+public func => (encoding: Alamofire.ParameterEncoding, values: [String: Any]) -> Parameters {
   return Parameters(encoding: encoding, values: values)
 }
