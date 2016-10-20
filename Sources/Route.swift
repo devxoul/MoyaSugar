@@ -13,44 +13,44 @@ import Moya
 /// Example:
 ///
 /// ```
-/// .GET("/me")
+/// .get("/me")
 /// ```
 public enum Route {
-  case GET(String)
-  case POST(String)
-  case PUT(String)
-  case DELETE(String)
-  case OPTIONS(String)
-  case HEAD(String)
-  case PATCH(String)
-  case TRACE(String)
-  case CONNECT(String)
+  case get(String)
+  case post(String)
+  case put(String)
+  case delete(String)
+  case options(String)
+  case head(String)
+  case patch(String)
+  case trace(String)
+  case connect(String)
 
   public var path: String {
     switch self {
-    case .GET(let path): return path
-    case .POST(let path): return path
-    case .PUT(let path): return path
-    case .DELETE(let path): return path
-    case .OPTIONS(let path): return path
-    case .HEAD(let path): return path
-    case .PATCH(let path): return path
-    case .TRACE(let path): return path
-    case .CONNECT(let path): return path
+    case .get(let path): return path
+    case .post(let path): return path
+    case .put(let path): return path
+    case .delete(let path): return path
+    case .options(let path): return path
+    case .head(let path): return path
+    case .patch(let path): return path
+    case .trace(let path): return path
+    case .connect(let path): return path
     }
   }
 
   public var method: Moya.Method {
     switch self {
-    case .GET: return .GET
-    case .POST: return .POST
-    case .PUT: return .PUT
-    case .DELETE: return .DELETE
-    case .OPTIONS: return .OPTIONS
-    case .HEAD: return .HEAD
-    case .PATCH: return .PATCH
-    case .TRACE: return .TRACE
-    case .CONNECT: return .CONNECT
+    case .get: return .get
+    case .post: return .post
+    case .put: return .put
+    case .delete: return .delete
+    case .options: return .options
+    case .head: return .head
+    case .patch: return .patch
+    case .trace: return .trace
+    case .connect: return .connect
     }
   }
 }

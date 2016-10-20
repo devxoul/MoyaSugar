@@ -17,7 +17,7 @@ public protocol SugarTargetType: TargetType {
   ///
   /// ```
   /// var route: Route {
-  ///   return .GET("/me")
+  ///   return .get("/me")
   /// }
   /// ```
   var route: Route { get }
