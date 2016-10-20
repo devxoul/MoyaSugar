@@ -16,14 +16,14 @@ env:
     - TVOS_SDK="appletvsimulator10.0"
     - WATCHOS_SDK="watchsimulator3.0"
   matrix:
-    - SCHEME="MoyaSugar-iOS"        SDK="$IOS_SDK"
-    - SCHEME="MoyaSugar-macOS"      SDK="$MACOS_SDK"
-    - SCHEME="MoyaSugar-tvOS"       SDK="$TVOS_SDK"
-    - SCHEME="MoyaSugar-watchOS"    SDK="$WATCHOS_SDK"
-    - SCHEME="RxMoyaSugar-iOS"      SDK="$IOS_SDK"
-    - SCHEME="RxMoyaSugar-macOS"    SDK="$MACOS_SDK"
-    - SCHEME="RxMoyaSugar-tvOS"     SDK="$TVOS_SDK"
-    - SCHEME="RxMoyaSugar-watchOS"  SDK="$WATCHOS_SDK"
+    - SCHEME="MoyaSugar-iOS"        SDK="$IOS_SDK"      ACTION="test"
+    - SCHEME="MoyaSugar-macOS"      SDK="$MACOS_SDK"    ACTION="test"
+    - SCHEME="MoyaSugar-tvOS"       SDK="$TVOS_SDK"     ACTION="test"
+    - SCHEME="MoyaSugar-watchOS"    SDK="$WATCHOS_SDK"  ACTION="build"
+    - SCHEME="RxMoyaSugar-iOS"      SDK="$IOS_SDK"      ACTION="test"
+    - SCHEME="RxMoyaSugar-macOS"    SDK="$MACOS_SDK"    ACTION="test"
+    - SCHEME="RxMoyaSugar-tvOS"     SDK="$TVOS_SDK"     ACTION="test"
+    - SCHEME="RxMoyaSugar-watchOS"  SDK="$WATCHOS_SDK"  ACTION="build"
 
 install:
   - bundle install --deployment
@@ -32,4 +32,4 @@ install:
   - bundle exec pod install
 
 script:
-  - xcodebuild clean build -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean $ACTION -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
