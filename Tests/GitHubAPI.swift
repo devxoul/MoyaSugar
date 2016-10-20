@@ -22,13 +22,13 @@ enum GitHubAPI: SugarTargetType, Then {
   var route: Route {
     switch self {
     case .userRepos(let owner):
-      return .GET("/users/\(owner)/repos")
+      return .get("/users/\(owner)/repos")
 
     case .createIssue(let owner, let repo, _, _):
-      return .POST("/repos/\(owner)/\(repo)/issues")
+      return .post("/repos/\(owner)/\(repo)/issues")
 
     case .editIssue(let owner, let repo, let number, _, _):
-      return .PATCH("/repos/\(owner)/\(repo)/issues/\(number)")
+      return .patch("/repos/\(owner)/\(repo)/issues/\(number)")
     }
   }
 

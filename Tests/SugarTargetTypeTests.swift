@@ -30,13 +30,13 @@ class SugarTargetTypeTests: XCTestCase {
 
   func testMethod() {
     GitHubAPI.userRepos(owner: "devxoul").do {
-      XCTAssertEqual($0.method, .GET)
+      XCTAssertEqual($0.method, .get)
     }
     GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do {
-      XCTAssertEqual($0.method, .POST)
+      XCTAssertEqual($0.method, .post)
     }
     GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do {
-      XCTAssertEqual($0.method, .PATCH)
+      XCTAssertEqual($0.method, .patch)
     }
   }
 
