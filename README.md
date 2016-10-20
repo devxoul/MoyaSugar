@@ -169,6 +169,7 @@ Same with [Moya](https://github.com/Moya/Moya)
 
     ```ruby
     pod 'MoyaSugar', '~> 0.1'
+    pod 'MoyaSugar/RxSwift', '~> 0.1' # Use with RxSwift
     ```
 
 > MoyaSugar currently doesn't cupport Carthage and Swift Package Manager.
