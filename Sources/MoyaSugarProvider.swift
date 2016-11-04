@@ -32,7 +32,14 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
         httpHeaderFields: target.httpHeaderFields ?? endpoint.httpHeaderFields
       )
     }
-    super.init(endpointClosure: sugarEndpointClosure)
+    super.init(
+      endpointClosure: sugarEndpointClosure,
+      requestClosure: requestClosure,
+      stubClosure: stubClosure,
+      manager: manager,
+      plugins: plugins,
+      trackInflights: trackInflights
+    )
   }
 
 }

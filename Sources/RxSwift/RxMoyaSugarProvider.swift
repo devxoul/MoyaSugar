@@ -33,7 +33,14 @@ open class RxMoyaSugarProvider<Target: SugarTargetType>: RxMoyaProvider<Target> 
         httpHeaderFields: target.httpHeaderFields ?? endpoint.httpHeaderFields
       )
     }
-    super.init(endpointClosure: sugarEndpointClosure)
+    super.init(
+      endpointClosure: sugarEndpointClosure,
+      requestClosure: requestClosure,
+      stubClosure: stubClosure,
+      manager: manager,
+      plugins: plugins,
+      trackInflights: trackInflights
+    )
   }
 
 }
