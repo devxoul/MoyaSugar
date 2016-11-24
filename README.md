@@ -49,6 +49,7 @@ import Moya
 import Moyasugar
 
 enum GitHubAPI {
+  case url(String)
   case userRepos(owner: String)
   case createIssue(owner: String, repo: String, title: String, body: String?)
   case editIssue(owner: String, repo: String, number: Int, title: String?, body: String?)
@@ -59,6 +60,9 @@ extension GitHubAPI : SugarTargetType {
   /// method + path
   var route: Route {
     switch self {
+    case .url(let urlString):
+      return .get(urlString)
+
     case .userRepos(let owner):
       return .get("/users/\(owner)/repos")
 
@@ -69,10 +73,22 @@ extension GitHubAPI : SugarTargetType {
       return .patch("/repos/\(owner)/\(repo)/issues/\(number)")
     }
   }
+
+  var url: URL {
+    switch self {
+    case .url(let urlString):
+      return URL(string: urlString)!
+    default:
+      return self.defaultURL
+    }
+  }
   
   /// encoding + parameters
   var params: Parameters? {
     switch self {
+    case .url:
+      return nil
+
     case .userRepos:
       return nil
 
@@ -126,6 +142,11 @@ extension GitHubAPI : SugarTargetType {
       return .get("/me")
     }
     ```
+
+- **`var url: URL`**
+
+    Returns the request URL. It retuens `defaultURL` as default, which is the combination of `baseURL` and `path`. Implement this property to return custom url. See [#6](https://github.com/devxoul/MoyaSugar/pull/6) for detail.
+
 
 - **`var params: Params?`**
 
