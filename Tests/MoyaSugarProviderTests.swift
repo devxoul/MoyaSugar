@@ -25,6 +25,17 @@ fileprivate struct Endpoints<Target: SugarTargetType>: Then {
 class MoyaSugarProviderTests: XCTestCase {
 
   func testMoyaSugarProvider() {
+    GitHubAPI.url("https://api.github.com/user/devxoul/repos?page=2").do {
+      Endpoints($0).do {
+        XCTAssertEqual($0.moya.URL, "https://api.github.com/https://api.github.com/user/devxoul/repos%3Fpage=2")
+        XCTAssertEqual($0.sugar.URL, "https://api.github.com/user/devxoul/repos?page=2")
+        XCTAssertEqual($0.moya.method, $0.sugar.method)
+        XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
+        XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
+        XCTAssertEqual($0.sugar.httpHeaderFields?["Accept"], "application/json")
+        XCTAssertEqual($0.sugar.httpHeaderFields?.count, 1)
+      }
+    }
     GitHubAPI.userRepos(owner: "devxoul").do {
       Endpoints($0).do {
         XCTAssertEqual($0.moya.URL, $0.sugar.URL)

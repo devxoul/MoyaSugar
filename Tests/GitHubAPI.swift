@@ -15,12 +15,16 @@ enum GitHubAPI: SugarTargetType, Then {
     return URL(string: "https://api.github.com")!
   }
 
+  case url(String)
   case userRepos(owner: String)
   case createIssue(owner: String, repo: String, title: String, body: String?)
   case editIssue(owner: String, repo: String, number: Int, title: String?, body: String?)
 
   var route: Route {
     switch self {
+    case .url(let urlString):
+      return .get(urlString)
+
     case .userRepos(let owner):
       return .get("/users/\(owner)/repos")
 
@@ -32,8 +36,20 @@ enum GitHubAPI: SugarTargetType, Then {
     }
   }
 
+  var url: URL {
+    switch self {
+    case .url(let urlString):
+      return URL(string: urlString)!
+    default:
+      return self.defaultURL
+    }
+  }
+
   var params: Parameters? {
     switch self {
+    case .url:
+      return nil
+
     case .userRepos:
       return nil
 
