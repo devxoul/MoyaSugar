@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/*.swift'
     ss.frameworks   = 'Foundation'
-    ss.dependency 'Moya', '>= 8.0.0-beta.3'
+    ss.dependency 'Moya', '>= 8.0.0-beta.4'
   end
 
   s.subspec 'RxSwift' do |ss|
     ss.source_files = 'Sources/RxSwift/*.swift'
     ss.dependency 'MoyaSugar/Core'
-    ss.dependency 'Moya/RxSwift', '>= 8.0.0-beta.3'
-    ss.dependency 'RxSwift', '>= 3.0.0-rc.1'
+    ss.dependency 'Moya/RxSwift', '>= 8.0.0-beta.4'
+    ss.dependency 'RxSwift', '>= 3.0.0'
   end
 end

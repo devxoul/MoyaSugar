@@ -15,10 +15,10 @@ import MoyaSugar
 open class RxMoyaSugarProvider<Target: SugarTargetType>: RxMoyaProvider<Target> {
 
   override public init(
-    endpointClosure: @escaping EndpointClosure = MoyaProvider.DefaultEndpointMapping,
-    requestClosure: @escaping RequestClosure = MoyaProvider.DefaultRequestMapping,
-    stubClosure: @escaping StubClosure = MoyaProvider.NeverStub,
-    manager: Manager = RxMoyaProvider<Target>.DefaultAlamofireManager(),
+    endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
+    requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
+    stubClosure: @escaping StubClosure = MoyaProvider.neverStub,
+    manager: Manager = RxMoyaProvider<Target>.defaultAlamofireManager(),
     plugins: [PluginType] = [],
     trackInflights: Bool = false
   ) {

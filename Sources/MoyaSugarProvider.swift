@@ -14,10 +14,10 @@ import Moya
 open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
 
   override public init(
-    endpointClosure: @escaping EndpointClosure = MoyaProvider.DefaultEndpointMapping,
-    requestClosure: @escaping RequestClosure = MoyaProvider.DefaultRequestMapping,
-    stubClosure: @escaping StubClosure = MoyaProvider.NeverStub,
-    manager: Manager = MoyaProvider<Target>.DefaultAlamofireManager(),
+    endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
+    requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
+    stubClosure: @escaping StubClosure = MoyaProvider.neverStub,
+    manager: Manager = MoyaProvider<Target>.defaultAlamofireManager(),
     plugins: [PluginType] = [],
     trackInflights: Bool = false
   ) {
