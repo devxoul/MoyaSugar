@@ -50,6 +50,10 @@ public protocol SugarTargetType: TargetType {
 
 public extension SugarTargetType {
   public var url: URL {
+    return self.defaultURL
+  }
+
+  var defaultURL: URL {
     return self.baseURL.appendingPathComponent(self.path)
   }
 
