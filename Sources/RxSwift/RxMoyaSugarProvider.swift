@@ -25,7 +25,7 @@ open class RxMoyaSugarProvider<Target: SugarTargetType>: RxMoyaProvider<Target> 
     func sugarEndpointClosure(target: Target) -> Endpoint<Target> {
       let endpoint = endpointClosure(target)
       return Endpoint<Target>(
-        URL: target.url.absoluteString,
+        url: target.url.absoluteString,
         sampleResponseClosure: endpoint.sampleResponseClosure,
         method: endpoint.method,
         parameters: endpoint.parameters,
