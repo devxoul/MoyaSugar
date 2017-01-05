@@ -1,7 +1,7 @@
 abstract_target 'MoyaSugar' do
   use_frameworks!
 
-  pod 'Moya', '8.0.0-beta.5'
+  pod 'Moya', '~> 8.0'
 
   target 'MoyaSugar-iOS'
   target 'MoyaSugar-macOS'
@@ -9,7 +9,7 @@ abstract_target 'MoyaSugar' do
   target 'MoyaSugar-watchOS'
 
   abstract_target 'Tests' do
-    pod 'Then', '~> 2.1'
+    pod 'Then'
 
     target 'MoyaSugar-iOS-Tests'
     target 'MoyaSugar-macOS-Tests'
@@ -17,8 +17,8 @@ abstract_target 'MoyaSugar' do
   end
 
   abstract_target 'RxMoyaSugar' do
-    pod 'Moya/RxSwift', '8.0.0-beta.5'
-    pod 'RxSwift', '~> 3.0'
+    pod 'Moya/RxSwift', '~> 8.0'
+    pod 'RxSwift', '~> 3.1'
 
     target 'RxMoyaSugar-iOS'
     target 'RxMoyaSugar-macOS'
