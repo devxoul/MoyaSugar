@@ -27,8 +27,8 @@ class MoyaSugarProviderTests: XCTestCase {
   func testMoyaSugarProvider() {
     GitHubAPI.url("https://api.github.com/user/devxoul/repos?page=2").do {
       Endpoints($0).do {
-        XCTAssertEqual($0.moya.URL, "https://api.github.com/https://api.github.com/user/devxoul/repos%3Fpage=2")
-        XCTAssertEqual($0.sugar.URL, "https://api.github.com/user/devxoul/repos?page=2")
+        XCTAssertEqual($0.moya.url, "https://api.github.com/https://api.github.com/user/devxoul/repos%3Fpage=2")
+        XCTAssertEqual($0.sugar.url, "https://api.github.com/user/devxoul/repos?page=2")
         XCTAssertEqual($0.moya.method, $0.sugar.method)
         XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
@@ -38,7 +38,7 @@ class MoyaSugarProviderTests: XCTestCase {
     }
     GitHubAPI.userRepos(owner: "devxoul").do {
       Endpoints($0).do {
-        XCTAssertEqual($0.moya.URL, $0.sugar.URL)
+        XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
         XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
@@ -48,7 +48,7 @@ class MoyaSugarProviderTests: XCTestCase {
     }
     GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do {
       Endpoints($0).do {
-        XCTAssertEqual($0.moya.URL, $0.sugar.URL)
+        XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
         XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
         XCTAssertEqual($0.sugar.parameterEncoding is JSONEncoding, true)
@@ -58,7 +58,7 @@ class MoyaSugarProviderTests: XCTestCase {
     }
     GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do {
       Endpoints($0).do {
-        XCTAssertEqual($0.moya.URL, $0.sugar.URL)
+        XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
         XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
