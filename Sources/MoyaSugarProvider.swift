@@ -28,7 +28,7 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
         sampleResponseClosure: endpoint.sampleResponseClosure,
         method: endpoint.method,
         parameters: endpoint.parameters,
-        parameterEncoding: target.params?.encoding ?? endpoint.parameterEncoding,
+        parameterEncoding: endpoint.parameterEncoding,
         httpHeaderFields: target.httpHeaderFields ?? endpoint.httpHeaderFields
       )
     }

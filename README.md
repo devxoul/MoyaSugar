@@ -8,13 +8,13 @@ Syntactic sugar for Moya.
 
 ## Why?
 
-[Moya](https://github.com/Moya/Moya) is an elegant network abstraction layer which abstracts API endpoints gracefully with `enum`. However, it would become massive when the application is getting larger. **Whenever you add an endpoint, you should write code at least 4 places: enum case, `method`, `path`, and `parameters` property.** It makes you scroll down again and again. Besides, if you would like to set different parameter encodings or HTTP header fields, you should customize `endpointClosure` of `MoyaProvider`.
+[Moya](https://github.com/Moya/Moya) is an elegant network abstraction layer which abstracts API endpoints gracefully with `enum`. However, it would become massive when the application is getting larger. **Whenever you add an endpoint, you should write code at least 5 places: enum case, `method`, `path`, `parameters` and `parameterEncoding` property.** It makes you scroll down again and again. Besides, if you would like to set different HTTP header fields, you should customize `endpointClosure` of `MoyaProvider`.
 
 If you're as lazy as I am, MoyaSugar is for you.
 
 ## At a Glance
 
-Forget about `method`, `path`, `parameters`, and `endpointClosure`. Use `route`, `params`, `httpHeaderFields` instead.
+Forget about `method`, `path`, `parameters`, `parameterEncoding` and `endpointClosure`. Use `route`, `params`, `httpHeaderFields` instead.
 
 ```swift
 extension MyService: SugarTargetType {

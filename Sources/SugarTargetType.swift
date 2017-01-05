@@ -69,6 +69,10 @@ public extension SugarTargetType {
     return self.params?.values
   }
 
+  public var parameterEncoding: ParameterEncoding {
+    return self.params?.encoding ?? URLEncoding()
+  }
+
   public var httpHeaderFields: [String: String]? {
     return nil
   }
