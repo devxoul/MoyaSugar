@@ -180,6 +180,17 @@ extension GitHubAPI : SugarTargetType {
     }
     ```
 
+    Note: If the `MoyaSugarProvider` is initialized with an `endpointClosure` parameter, HTTP header fields of `endpointClosure` will be used. This is how to extend the target's HTTP header fields in `endpointClosure`:
+
+    ```swift
+    let endpointClosure: (GitHubAPI) -> Endpoint<GitHubAPI> = { target in
+      let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+      return defaultEndpoint
+        .adding(newHTTPHeaderFields: target.httpHeaderFields ?? [:])
+        .adding(newHTTPHeaderFields: ["Authorization": "MySecretToken"])
+    }
+    ```
+
 ## Requirements
 
 Same with [Moya](https://github.com/Moya/Moya)
