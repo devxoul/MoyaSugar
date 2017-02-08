@@ -118,14 +118,14 @@ extension GitHubAPI : SugarTargetType {
 
 ## APIs
 
-- **`protocol SugarTargetType`**
+- <a name="api-sugartargettype" href="#api-sugartargettype">🔗</a> **`protocol SugarTargetType`**
 
     ```diff
     - extension GitHubAPI: TargetType
     + extension GitHubAPI: SugarTargetType
     ```
 
-- **`var route: Route`**
+- <a name="api-route" href="#api-route">🔗</a> **`var route: Route`**
 
     Returns `Route` which contains HTTP method and URL path information.
 
@@ -143,12 +143,12 @@ extension GitHubAPI : SugarTargetType {
     }
     ```
 
-- **`var url: URL`**
+- <a name="api-url" href="#api-url">🔗</a> **`var url: URL`**
 
     Returns the request URL. It retuens `defaultURL` as default, which is the combination of `baseURL` and `path`. Implement this property to return custom url. See [#6](https://github.com/devxoul/MoyaSugar/pull/6) for detail.
 
 
-- **`var params: Params?`**
+- <a name="api-params" href="#api-params">🔗</a> **`var params: Params?`**
 
     Returns `Parameters` which contains parameter encoding and values.
 
@@ -168,7 +168,7 @@ extension GitHubAPI : SugarTargetType {
     }
     ```
 
-- **`var httpHeaderField: [String: String]?`**
+- <a name="api-httpheaderfields" href="#api-httpheaderfields">🔗</a> **`var httpHeaderField: [String: String]?`**
 
     Returns HTTP header values. `nil` for default.
 
