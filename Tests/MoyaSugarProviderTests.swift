@@ -68,4 +68,31 @@ class MoyaSugarProviderTests: XCTestCase {
     }
   }
 
+  func testHTTPHeaderFields_overridedByEndpointClosure() {
+    let endpointClosure: (GitHubAPI) -> Endpoint<GitHubAPI> = { target in
+      let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+      return defaultEndpoint.adding(newHTTPHeaderFields: ["Authorization": "MySecretToken"])
+    }
+    let provider = MoyaSugarProvider<GitHubAPI>(endpointClosure: endpointClosure)
+    let endpoint = provider.endpoint(GitHubAPI.userRepos(owner: "devxoul"))
+    XCTAssertNotNil(endpoint.httpHeaderFields)
+    XCTAssertEqual(endpoint.httpHeaderFields!, ["Authorization": "MySecretToken"])
+  }
+
+  func testHTTPHeaderFields_extendedByEndpointClosure() {
+    let endpointClosure: (GitHubAPI) -> Endpoint<GitHubAPI> = { target in
+      let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+      return defaultEndpoint
+        .adding(newHTTPHeaderFields: target.httpHeaderFields ?? [:])
+        .adding(newHTTPHeaderFields: ["Authorization": "MySecretToken"])
+    }
+    let provider = MoyaSugarProvider<GitHubAPI>(endpointClosure: endpointClosure)
+    let endpoint = provider.endpoint(GitHubAPI.userRepos(owner: "devxoul"))
+    XCTAssertNotNil(endpoint.httpHeaderFields)
+    XCTAssertEqual(endpoint.httpHeaderFields!, [
+      "Authorization": "MySecretToken",
+      "Accept": "application/json",
+    ])
+  }
+
 }
