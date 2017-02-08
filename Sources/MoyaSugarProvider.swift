@@ -29,7 +29,7 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
         method: endpoint.method,
         parameters: endpoint.parameters,
         parameterEncoding: endpoint.parameterEncoding,
-        httpHeaderFields: target.httpHeaderFields ?? endpoint.httpHeaderFields
+        httpHeaderFields: endpoint.httpHeaderFields ?? target.httpHeaderFields 
       )
     }
     super.init(
