@@ -200,8 +200,8 @@ Same with [Moya](https://github.com/Moya/Moya)
 - **Using [CocoaPods](https://cocoapods.org)**:
 
     ```ruby
-    pod 'MoyaSugar', '~> 0.3'
-    pod 'MoyaSugar/RxSwift', '~> 0.3' # Use with RxSwift
+    pod 'MoyaSugar', '~> 0.4'
+    pod 'MoyaSugar/RxSwift', '~> 0.4' # Use with RxSwift
     ```
 
 > MoyaSugar currently doesn't cupport Carthage and Swift Package Manager.
