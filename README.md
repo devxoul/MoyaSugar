@@ -74,6 +74,7 @@ extension GitHubAPI : SugarTargetType {
     }
   }
 
+  // override default url building behavior
   var url: URL {
     switch self {
     case .url(let urlString):
