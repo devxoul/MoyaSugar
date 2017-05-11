@@ -149,13 +149,13 @@ extension GitHubAPI : SugarTargetType {
     Returns the request URL. It retuens `defaultURL` as default, which is the combination of `baseURL` and `path`. Implement this property to return custom url. See [#6](https://github.com/devxoul/MoyaSugar/pull/6) for detail.
 
 
-- <a name="api-params" href="#api-params">🔗</a> **`var params: Params?`**
+- <a name="api-params" href="#api-params">🔗</a> **`var params: Parameters?`**
 
     Returns `Parameters` which contains parameter encoding and values.
 
     ```diff
     - var parameters: [String: Any]? { get }
-    + var params: Params? { get }
+    + var params: Parameters? { get }
     ```
     
     Example:
