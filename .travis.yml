@@ -25,6 +25,9 @@ env:
     - SCHEME="RxMoyaSugar-tvOS"     SDK="$TVOS_SDK"     ACTION="test"
     - SCHEME="RxMoyaSugar-watchOS"  SDK="$WATCHOS_SDK"  ACTION="build"
 
+before_install:
+  - set -o pipefail
+
 install:
   - bundle install --deployment
   - bundle exec pod --version
