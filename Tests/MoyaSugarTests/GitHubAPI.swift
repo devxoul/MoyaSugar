@@ -12,6 +12,7 @@ enum GitHubAPI: SugarTargetType, Then {
   }
 
   case url(String)
+  case index
   case userRepos(owner: String)
   case createIssue(owner: String, repo: String, title: String, body: String?)
   case editIssue(owner: String, repo: String, number: Int, title: String?, body: String?)
@@ -20,6 +21,9 @@ enum GitHubAPI: SugarTargetType, Then {
     switch self {
     case .url(let urlString):
       return .get(urlString)
+
+    case .index:
+      return .get("")
 
     case .userRepos(let owner):
       return .get("/users/\(owner)/repos")
@@ -44,6 +48,9 @@ enum GitHubAPI: SugarTargetType, Then {
   var params: Parameters? {
     switch self {
     case .url:
+      return nil
+
+    case .index:
       return nil
 
     case .userRepos:

@@ -9,6 +9,9 @@ class SugarTargetTypeTests: XCTestCase {
     GitHubAPI.url("https://github.com/user/devxoul/repos?page=2").do {
       XCTAssertEqual($0.url, URL(string: "https://github.com/user/devxoul/repos?page=2")!)
     }
+    GitHubAPI.index.do {
+      XCTAssertEqual($0.url, URL(string: "https://api.github.com")!)
+    }
     GitHubAPI.userRepos(owner: "devxoul").do {
       XCTAssertEqual($0.path, "/users/devxoul/repos")
       XCTAssertEqual($0.url, URL(string: "https://api.github.com/users/devxoul/repos")!)
