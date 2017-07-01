@@ -43,9 +43,9 @@ class SugarTargetTypeTests: XCTestCase {
 
     GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do {
       XCTAssertTrue($0.params?.encoding is JSONEncoding)
-      XCTAssertEqual($0.parameters?.count, 2)
+      XCTAssertEqual($0.parameters?.count, 1)
       XCTAssertEqual($0.parameters?["title"] as? String, "Title")
-      XCTAssertNil($0.parameters?["body"] as? String)
+      XCTAssertNil($0.parameters?["body"])
     }
     GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do {
       XCTAssertTrue($0.params?.encoding is URLEncoding)

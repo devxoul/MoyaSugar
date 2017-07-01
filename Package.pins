@@ -8,6 +8,12 @@
       "version": "4.5.0"
     },
     {
+      "package": "Immutable",
+      "reason": null,
+      "repositoryURL": "https://github.com/devxoul/Immutable.git",
+      "version": "0.4.0"
+    },
+    {
       "package": "Moya",
       "reason": null,
       "repositoryURL": "https://github.com/Moya/Moya.git",

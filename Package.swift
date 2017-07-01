@@ -9,9 +9,10 @@ var dependencies: [Package.Dependency] = [
 
 let isTest = ProcessInfo.processInfo.environment["TEST"] == "1"
 if isTest {
-  dependencies.append(
-    .Package(url: "https://github.com/devxoul/Then.git", majorVersion: 2)
-  )
+  dependencies.append(contentsOf: [
+    .Package(url: "https://github.com/devxoul/Immutable.git", majorVersion: 0),
+    .Package(url: "https://github.com/devxoul/Then.git", majorVersion: 2),
+  ])
 }
 
 let package = Package(

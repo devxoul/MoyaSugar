@@ -23,7 +23,7 @@ class MoyaSugarProviderTests: XCTestCase {
         XCTAssertEqual($0.moya.url, "https://api.github.com/https://api.github.com/user/devxoul/repos%3Fpage=2")
         XCTAssertEqual($0.sugar.url, "https://api.github.com/user/devxoul/repos?page=2")
         XCTAssertEqual($0.moya.method, $0.sugar.method)
-        XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
+        XCTAssertEqual(String(describing: $0.moya.parameters), String(describing: $0.sugar.parameters))
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
         XCTAssertEqual($0.sugar.httpHeaderFields?["Accept"], "application/json")
         XCTAssertEqual($0.sugar.httpHeaderFields?.count, 1)
@@ -33,7 +33,7 @@ class MoyaSugarProviderTests: XCTestCase {
       Endpoints($0).do {
         XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
-        XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
+        XCTAssertEqual(String(describing: $0.moya.parameters), String(describing: $0.sugar.parameters))
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
         XCTAssertEqual($0.sugar.httpHeaderFields?["Accept"], "application/json")
         XCTAssertEqual($0.sugar.httpHeaderFields?.count, 1)
@@ -43,7 +43,7 @@ class MoyaSugarProviderTests: XCTestCase {
       Endpoints($0).do {
         XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
-        XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
+        XCTAssertEqual(String(describing: $0.moya.parameters), String(describing: $0.sugar.parameters))
         XCTAssertEqual($0.sugar.parameterEncoding is JSONEncoding, true)
         XCTAssertEqual($0.sugar.httpHeaderFields?["Accept"], "application/json")
         XCTAssertEqual($0.sugar.httpHeaderFields?.count, 1)
@@ -53,7 +53,7 @@ class MoyaSugarProviderTests: XCTestCase {
       Endpoints($0).do {
         XCTAssertEqual($0.moya.url, $0.sugar.url)
         XCTAssertEqual($0.moya.method, $0.sugar.method)
-        XCTAssertEqual("\($0.moya.parameters)", "\($0.sugar.parameters)")
+        XCTAssertEqual(String(describing: $0.moya.parameters), String(describing: $0.sugar.parameters))
         XCTAssertEqual($0.sugar.parameterEncoding is URLEncoding, true)
         XCTAssertEqual($0.sugar.httpHeaderFields?["Accept"], "application/json")
         XCTAssertEqual($0.sugar.httpHeaderFields?.count, 1)

@@ -3,6 +3,7 @@ import struct Foundation.URL
 
 import Moya
 import MoyaSugar
+import Immutable
 import Then
 
 enum GitHubAPI: SugarTargetType, Then {
@@ -49,17 +50,16 @@ enum GitHubAPI: SugarTargetType, Then {
       return nil
 
     case .createIssue(_, _, let title, let body):
-      return JSONEncoding() => [
+      return JSONEncoding() => filterNil([
         "title": title,
         "body": body,
-      ]
+      ])
 
     case .editIssue(_, _, _, let title, let body):
-      // to test default encoding
-      return [
+      return URLEncoding() => filterNil([
         "title": title,
         "body": body,
-      ]
+      ])
     }
   }
 
