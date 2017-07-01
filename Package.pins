@@ -1,0 +1,42 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "Alamofire",
+      "reason": null,
+      "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+      "version": "4.5.0"
+    },
+    {
+      "package": "Moya",
+      "reason": null,
+      "repositoryURL": "https://github.com/Moya/Moya.git",
+      "version": "8.0.5"
+    },
+    {
+      "package": "ReactiveSwift",
+      "reason": null,
+      "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "version": "1.1.3"
+    },
+    {
+      "package": "Result",
+      "reason": null,
+      "repositoryURL": "https://github.com/antitypical/Result.git",
+      "version": "3.2.3"
+    },
+    {
+      "package": "RxSwift",
+      "reason": null,
+      "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+      "version": "3.5.0"
+    },
+    {
+      "package": "Then",
+      "reason": null,
+      "repositoryURL": "https://github.com/devxoul/Then.git",
+      "version": "2.1.0"
+    }
+  ],
+  "version": 1
+}

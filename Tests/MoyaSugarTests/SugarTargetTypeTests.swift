@@ -1,11 +1,3 @@
-//
-//  SugarTargetTypeTests.swift
-//  MoyaSugar
-//
-//  Created by Suyeol Jeon on 18/10/2016.
-//  Copyright © 2016 Suyeol Jeon. All rights reserved.
-//
-
 import XCTest
 
 import Moya

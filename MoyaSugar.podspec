@@ -19,13 +19,13 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Sources/*.swift'
+    ss.source_files = 'Sources/MoyaSugar/*.swift'
     ss.frameworks   = 'Foundation'
     ss.dependency 'Moya', '>= 8.0.0'
   end
 
   s.subspec 'RxSwift' do |ss|
-    ss.source_files = 'Sources/RxSwift/*.swift'
+    ss.source_files = 'Sources/RxMoyaSugar/*.swift'
     ss.dependency 'MoyaSugar/Core'
     ss.dependency 'Moya/RxSwift', '>= 8.0.0'
     ss.dependency 'RxSwift', '>= 3.0.0'
