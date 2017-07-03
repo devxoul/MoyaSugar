@@ -48,7 +48,7 @@ public extension SugarTargetType {
   }
 
   var defaultURL: URL {
-    return self.baseURL.appendingPathComponent(self.path)
+    return self.path.isEmpty ? self.baseURL : self.baseURL.appendingPathComponent(self.path)
   }
 
   public var path: String {
