@@ -9,6 +9,7 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
     endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
     requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
     stubClosure: @escaping StubClosure = MoyaProvider.neverStub,
+    callbackQueue: DispatchQueue? = nil,
     manager: Manager = MoyaProvider<Target>.defaultAlamofireManager(),
     plugins: [PluginType] = [],
     trackInflights: Bool = false
@@ -19,8 +20,7 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
         url: target.url.absoluteString,
         sampleResponseClosure: endpoint.sampleResponseClosure,
         method: endpoint.method,
-        parameters: endpoint.parameters,
-        parameterEncoding: endpoint.parameterEncoding,
+        task: endpoint.task,
         httpHeaderFields: endpoint.httpHeaderFields ?? target.httpHeaderFields 
       )
     }
