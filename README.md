@@ -205,7 +205,14 @@ Same with [Moya](https://github.com/Moya/Moya)
     pod 'MoyaSugar/RxSwift', '~> 0.4' # Use with RxSwift
     ```
 
-> MoyaSugar currently doesn't cupport Carthage and Swift Package Manager.
+> MoyaSugar currently doesn't cupport Carthage.
+
+## Contributing
+
+```console
+$ TEST=1 swift package generate-xcodeproj
+$ open MoyaSugar.xcodeproj
+```
 
 ## License
 
