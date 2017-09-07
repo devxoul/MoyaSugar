@@ -29,7 +29,7 @@ extension MyService: SugarTargetType {
     ]
   }
 
-  var httpHeaderFields: [String: String]? {
+  var headers: [String: String]? {
     return ["Accept": "application/json"]
   }
 }
@@ -83,7 +83,7 @@ extension GitHubAPI : SugarTargetType {
       return self.defaultURL
     }
   }
-  
+
   /// encoding + parameters
   var params: Parameters? {
     switch self {
@@ -108,7 +108,7 @@ extension GitHubAPI : SugarTargetType {
     }
   }
 
-  var httpHeaderFields: [String: String]? {
+  var headers: [String: String]? {
     return [
       "Accept": "application/json"
     ]
@@ -157,9 +157,9 @@ extension GitHubAPI : SugarTargetType {
     - var parameters: [String: Any]? { get }
     + var params: Parameters? { get }
     ```
-    
+
     Example:
-   
+
     ```swift
     var params: Parameters? {
       return JSONEncoding() => [
@@ -169,25 +169,12 @@ extension GitHubAPI : SugarTargetType {
     }
     ```
 
-- <a name="api-httpheaderfields" href="#api-httpheaderfields">🔗</a> **`var httpHeaderField: [String: String]?`**
-
-    Returns HTTP header values. `nil` for default.
-
-    Example:
-
-    ```swift
-    var httpHeaderFields: [String: String]? {
-      return ["Accept": "application/json"]
-    }
-    ```
-
     Note: If the `MoyaSugarProvider` is initialized with an `endpointClosure` parameter, HTTP header fields of `endpointClosure` will be used. This is how to extend the target's HTTP header fields in `endpointClosure`:
 
     ```swift
     let endpointClosure: (GitHubAPI) -> Endpoint<GitHubAPI> = { target in
       let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
       return defaultEndpoint
-        .adding(newHTTPHeaderFields: target.httpHeaderFields ?? [:])
         .adding(newHTTPHeaderFields: ["Authorization": "MySecretToken"])
     }
     ```
