@@ -38,38 +38,44 @@ class SugarTargetTypeTests: XCTestCase {
     }
   }
 
-  func testParams() {
-    GitHubAPI.userRepos(owner: "devxoul").do {
-      XCTAssertNil($0.params)
-      XCTAssertNil($0.parameters)
+  func testTasks() {
+    GitHubAPI.userRepos(owner: "devxoul").do { target in
+      XCTAssertTrue({
+        if case .requestPlain = target.task {
+          return true
+        } else {
+          return false
+        }
+      }())
     }
-
-    GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do {
-      XCTAssertTrue($0.params?.encoding is JSONEncoding)
-      XCTAssertEqual($0.parameters?.count, 1)
-      XCTAssertEqual($0.parameters?["title"] as? String, "Title")
-      XCTAssertNil($0.parameters?["body"])
+    GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do { target in
+      guard case let .requestParameters(parameters, encoding) = target.task else { preconditionFailure() }
+      XCTAssertTrue(encoding is JSONEncoding)
+      XCTAssertEqual(parameters.count, 1)
+      XCTAssertEqual(parameters["title"] as? String, "Title")
+      XCTAssertNil(parameters["body"])
     }
-    GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do {
-      XCTAssertTrue($0.params?.encoding is URLEncoding)
-      XCTAssertEqual($0.parameters?.count, 2)
-      XCTAssertEqual($0.parameters?["title"] as? String, "A")
-      XCTAssertEqual($0.parameters?["body"] as? String, "B")
+    GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do { target in
+      guard case let .requestParameters(parameters, encoding) = target.task else { preconditionFailure() }
+      XCTAssertTrue(encoding is URLEncoding)
+      XCTAssertEqual(parameters.count, 2)
+      XCTAssertEqual(parameters["title"] as? String, "A")
+      XCTAssertEqual(parameters["body"] as? String, "B")
     }
   }
 
   func testHTTPHeaderFields() {
     GitHubAPI.userRepos(owner: "devxoul").do {
-      XCTAssertEqual($0.httpHeaderFields?.count, 1)
-      XCTAssertEqual($0.httpHeaderFields?["Accept"], "application/json")
+      XCTAssertEqual($0.headers?.count, 1)
+      XCTAssertEqual($0.headers?["Accept"], "application/json")
     }
     GitHubAPI.createIssue(owner: "devxoul", repo: "MoyaSugar", title: "Title", body: nil).do {
-      XCTAssertEqual($0.httpHeaderFields?.count, 1)
-      XCTAssertEqual($0.httpHeaderFields?["Accept"], "application/json")
+      XCTAssertEqual($0.headers?.count, 1)
+      XCTAssertEqual($0.headers?["Accept"], "application/json")
     }
     GitHubAPI.editIssue(owner: "devxoul", repo: "Then", number: 1, title: "A", body: "B").do {
-      XCTAssertEqual($0.httpHeaderFields?.count, 1)
-      XCTAssertEqual($0.httpHeaderFields?["Accept"], "application/json")
+      XCTAssertEqual($0.headers?.count, 1)
+      XCTAssertEqual($0.headers?["Accept"], "application/json")
     }
   }
 
