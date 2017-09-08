@@ -19,7 +19,6 @@ let package = Package(
   name: "MoyaSugar",
   targets: [
     Target(name: "MoyaSugar"),
-    Target(name: "RxMoyaSugar", dependencies: ["MoyaSugar"]),
   ],
   dependencies: dependencies
 )
