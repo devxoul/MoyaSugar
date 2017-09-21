@@ -15,31 +15,6 @@ public protocol SugarTargetType: TargetType {
   /// }
   /// ```
   var route: Route { get }
-
-  /// Returns `Parameters` which contains parameter encoding and values.
-  ///
-  /// Example:
-  ///
-  /// ```
-  /// var params: Parameters? {
-  ///   return JSONEncoding() => [
-  ///     "username": "devxoul",
-  ///     "password": "****",
-  ///   ]
-  /// }
-  /// ```
-  var params: Parameters? { get }
-
-  /// Returns HTTP header values.
-  ///
-  /// Example:
-  ///
-  /// ```
-  /// var httpHeaderFields: [String: String]? {
-  ///   return ["Accept": "application/json"]
-  /// }
-  /// ```
-  var httpHeaderFields: [String: String]? { get }
 }
 
 public extension SugarTargetType {
@@ -57,17 +32,5 @@ public extension SugarTargetType {
 
   public var method: Moya.Method {
     return self.route.method
-  }
-
-  public var parameters: [String: Any]? {
-    return self.params?.values
-  }
-
-  public var parameterEncoding: ParameterEncoding {
-    return self.params?.encoding ?? URLEncoding()
-  }
-
-  public var httpHeaderFields: [String: String]? {
-    return nil
   }
 }

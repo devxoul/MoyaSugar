@@ -4,7 +4,7 @@ import Foundation
 import PackageDescription
 
 var dependencies: [Package.Dependency] = [
-  .Package(url: "https://github.com/Moya/Moya.git", majorVersion: 8),
+  .Package(url: "https://github.com/Moya/Moya.git", majorVersion: 9),
 ]
 
 let isTest = ProcessInfo.processInfo.environment["TEST"] == "1"
@@ -19,7 +19,6 @@ let package = Package(
   name: "MoyaSugar",
   targets: [
     Target(name: "MoyaSugar"),
-    Target(name: "RxMoyaSugar", dependencies: ["MoyaSugar"]),
   ],
   dependencies: dependencies
 )

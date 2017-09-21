@@ -44,33 +44,34 @@ enum GitHubAPI: SugarTargetType, Then {
       return self.defaultURL
     }
   }
-
-  var params: Parameters? {
+  
+  var task: Task {
     switch self {
-    case .url:
-      return nil
-
-    case .index:
-      return nil
-
-    case .userRepos:
-      return nil
-
+    case .url: return .requestPlain
+    case .index: return .requestPlain
+    case .userRepos: return .requestPlain
+      
     case .createIssue(_, _, let title, let body):
-      return JSONEncoding() => filterNil([
-        "title": title,
-        "body": body,
-      ])
-
+      return .requestParameters(
+        parameters: filterNil([
+          "title": title,
+          "body": body,
+        ]),
+        encoding: JSONEncoding()
+      )
+      
     case .editIssue(_, _, _, let title, let body):
-      return URLEncoding() => filterNil([
-        "title": title,
-        "body": body,
-      ])
+      return .requestParameters(
+        parameters: filterNil([
+          "title": title,
+          "body": body,
+        ]),
+        encoding: URLEncoding()
+      )
     }
   }
 
-  var httpHeaderFields: [String: String]? {
+  var headers: [String: String]? {
     return [
       "Accept": "application/json"
     ]
@@ -79,8 +80,5 @@ enum GitHubAPI: SugarTargetType, Then {
   var sampleData: Data {
     return Data()
   }
-
-  var task: Task {
-    return .request
-  }
 }
+
