@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "b8995447518fd57af14c88a47f27434a16f60403",
+          "version": "4.5.1"
+        }
+      },
+      {
+        "package": "Immutable",
+        "repositoryURL": "https://github.com/devxoul/Immutable.git",
+        "state": {
+          "branch": null,
+          "revision": "b2f80e1f5f54d69c19458659df5aa30b7bcc885c",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "Moya",
+        "repositoryURL": "https://github.com/Moya/Moya.git",
+        "state": {
+          "branch": null,
+          "revision": "137d53077ac7d5fdaa8f464ae03b56f7175b7073",
+          "version": "9.0.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b9d5b350a446b85704396ce332a1f9e4960cfc6b",
+          "version": "2.0.1"
+        }
+      },
+      {
+        "package": "Result",
+        "repositoryURL": "https://github.com/antitypical/Result.git",
+        "state": {
+          "branch": null,
+          "revision": "c8446185238659a2b27c0261f64ff1254291d07d",
+          "version": "3.2.3"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "068b4de87a58d637179709c41929cd53881b1c09",
+          "version": "3.3.1"
+        }
+      },
+      {
+        "package": "Then",
+        "repositoryURL": "https://github.com/devxoul/Then.git",
+        "state": {
+          "branch": null,
+          "revision": "27974b0ea6c4fe860e080317b97e25d27f88b6df",
+          "version": "2.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
