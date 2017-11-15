@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MoyaSugar'
-  s.version          = '1.0.0-beta.1'
+  s.version          = '1.0.0'
   s.summary          = '🍯 Syntactic sugar for Moya'
   s.homepage         = 'https://github.com/devxoul/MoyaSugar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/MoyaSugar/*.swift'
     ss.frameworks   = 'Foundation'
-    ss.dependency 'Moya', '>= 10.0.0-beta.1'
+    ss.dependency 'Moya', '>= 10.0.0'
   end
 
   s.subspec 'RxSwift' do |ss|
     ss.dependency 'MoyaSugar/Core'
-    ss.dependency 'Moya/RxSwift', '>= 10.0.0-beta.1'
-    ss.dependency 'RxSwift', '>= 4.0.0-rc.0'
+    ss.dependency 'Moya/RxSwift', '>= 10.0.0'
+    ss.dependency 'RxSwift', '>= 4.0.0'
   end
 end
