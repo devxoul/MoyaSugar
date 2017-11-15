@@ -45,29 +45,23 @@ enum GitHubAPI: SugarTargetType, Then {
     }
   }
   
-  var task: Task {
+  var parameters: Parameters? {
     switch self {
-    case .url: return .requestPlain
-    case .index: return .requestPlain
-    case .userRepos: return .requestPlain
+    case .url: return nil
+    case .index: return nil
+    case .userRepos: return nil
       
-    case .createIssue(_, _, let title, let body):
-      return .requestParameters(
-        parameters: filterNil([
-          "title": title,
-          "body": body,
-        ]),
-        encoding: JSONEncoding()
-      )
+    case let .createIssue(_, _, title, body):
+      return JSONEncoding() => [
+        "title": title,
+        "body": body,
+      ]
       
-    case .editIssue(_, _, _, let title, let body):
-      return .requestParameters(
-        parameters: filterNil([
-          "title": title,
-          "body": body,
-        ]),
-        encoding: URLEncoding()
-      )
+    case let .editIssue(_, _, _, title, body):
+      return URLEncoding() => [
+        "title": title,
+        "body": body,
+      ]
     }
   }
 
@@ -81,4 +75,3 @@ enum GitHubAPI: SugarTargetType, Then {
     return Data()
   }
 }
-

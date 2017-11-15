@@ -15,6 +15,7 @@ public protocol SugarTargetType: TargetType {
   /// }
   /// ```
   var route: Route { get }
+  var parameters: Parameters? { get }
 }
 
 public extension SugarTargetType {
@@ -32,5 +33,10 @@ public extension SugarTargetType {
 
   public var method: Moya.Method {
     return self.route.method
+  }
+
+  public var task: Task {
+    guard let parameters = self.parameters else { return .requestPlain }
+    return .requestParameters(parameters: parameters.values, encoding: parameters.encoding)
   }
 }
