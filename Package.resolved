@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/Moya/Moya.git",
         "state": {
           "branch": null,
-          "revision": "137d53077ac7d5fdaa8f464ae03b56f7175b7073",
-          "version": "9.0.0"
+          "revision": "7b2bd10b94c47a950160156dd4b5b76fa7a67116",
+          "version": "10.0.0"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/antitypical/Result.git",
         "state": {
           "branch": null,
-          "revision": "c8446185238659a2b27c0261f64ff1254291d07d",
-          "version": "3.2.3"
+          "revision": "7477584259bfce2560a19e06ad9f71db441fff11",
+          "version": "3.2.4"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "068b4de87a58d637179709c41929cd53881b1c09",
-          "version": "3.3.1"
+          "revision": "12cccb171ad9038251af6883807f0290c1d75a5b",
+          "version": "4.0.0"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/devxoul/Then.git",
         "state": {
           "branch": null,
-          "revision": "27974b0ea6c4fe860e080317b97e25d27f88b6df",
-          "version": "2.2.0"
+          "revision": "c9941c72b8556000b7eb1baacf5f22b2a7925f92",
+          "version": "2.3.0"
         }
       }
     ]

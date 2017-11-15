@@ -8,7 +8,7 @@ let package = Package(
     .library(name: "MoyaSugar", targets: ["MoyaSugar"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "9.0.0")),
+    .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "10.0.0")),
     .package(url: "https://github.com/devxoul/Immutable.git", .upToNextMajor(from: "0.5.0")),
     .package(url: "https://github.com/devxoul/Then.git", .upToNextMajor(from: "2.2.0")),
   ],
