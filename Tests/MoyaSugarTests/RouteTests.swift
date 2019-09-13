@@ -28,5 +28,4 @@ class MoyaSugarTests: XCTestCase {
     XCTAssertEqual(Route.trace("/path").path, "/path")
     XCTAssertEqual(Route.connect("/path").path, "/path")
   }
-
 }
