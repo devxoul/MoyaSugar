@@ -1,6 +1,6 @@
 # MoyaSugar
 
-![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
 [![Build Status](https://travis-ci.org/devxoul/MoyaSugar.svg?branch=master)](https://travis-ci.org/devxoul/MoyaSugar)
 [![CocoaPods](http://img.shields.io/cocoapods/v/MoyaSugar.svg)](https://cocoapods.org/pods/MoyaSugar)
 
@@ -188,8 +188,8 @@ Same with [Moya](https://github.com/Moya/Moya)
 - **Using [CocoaPods](https://cocoapods.org)**:
 
     ```ruby
-    pod 'MoyaSugar', '~> 0.4'
-    pod 'MoyaSugar/RxSwift', '~> 0.4' # Use with RxSwift
+    pod 'MoyaSugar'
+    pod 'MoyaSugar/RxSwift' # Use with RxSwift
     ```
 
 > MoyaSugar currently doesn't cupport Carthage.
