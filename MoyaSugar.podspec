@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.default_subspec = 'Core'
+  s.swift_version = '5.1'
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/MoyaSugar/*.swift'
