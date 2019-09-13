@@ -1,7 +1,7 @@
 # MoyaSugar
 
 ![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
-[![Build Status](https://travis-ci.org/devxoul/MoyaSugar.svg?branch=master)](https://travis-ci.org/devxoul/MoyaSugar)
+[![CI](https://github.com/devxoul/MoyaSugar/workflows/CI/badge.svg)](https://github.com/devxoul/MoyaSugar/workflows/actions)
 [![CocoaPods](http://img.shields.io/cocoapods/v/MoyaSugar.svg)](https://cocoapods.org/pods/MoyaSugar)
 
 Syntactic sugar for Moya.
