@@ -78,5 +78,4 @@ class SugarTargetTypeTests: XCTestCase {
       XCTAssertEqual($0.headers?["Accept"], "application/json")
     }
   }
-
 }

@@ -6,15 +6,15 @@ import MoyaSugar
 import Then
 
 fileprivate struct Endpoints<Target: SugarTargetType> {
-  let sugar: Endpoint<Target>
-  let moya: Endpoint<Target>
+  let sugar: Endpoint
+  let moya: Endpoint
 
   init(_ target: Target) {
     self.sugar = MoyaSugarProvider<Target>().endpoint(target)
     self.moya = MoyaProvider<Target>().endpoint(target)
   }
   
-  func `do`(_ closure: (Endpoint<Target>, Endpoint<Target>) -> Void) {
+  func `do`(_ closure: (Endpoint, Endpoint) -> Void) {
     return closure(self.moya, self.sugar)
   }
 }
@@ -72,7 +72,7 @@ class MoyaSugarProviderTests: XCTestCase {
         XCTAssertEqual(moya.method, sugar.method)
         guard case let .requestParameters(moyaParameters, moyaEncoding) = moya.task else { preconditionFailure() }
         guard case let .requestParameters(sugarParameters, sugarEncoding) = sugar.task else { preconditionFailure() }
-        XCTAssertEqual(String(describing: moyaParameters), String(describing: sugarParameters))
+        XCTAssertEqual(moyaParameters.map { "\($0)" }.sorted(), sugarParameters.map { "\($0)" }.sorted())
         XCTAssertEqual(moyaEncoding is URLEncoding, true)
         XCTAssertEqual(sugarEncoding is URLEncoding, true)
         XCTAssertEqual(sugar.httpHeaderFields?["Accept"], "application/json")
@@ -82,7 +82,7 @@ class MoyaSugarProviderTests: XCTestCase {
   }
 
   func testHTTPHeaderFields_overridedByEndpointClosure() {
-    let endpointClosure: (GitHubAPI) -> Endpoint<GitHubAPI> = { target in
+    let endpointClosure: (GitHubAPI) -> Endpoint = { target in
       let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
       return defaultEndpoint.adding(newHTTPHeaderFields: ["Authorization": "MySecretToken"])
     }
@@ -94,5 +94,4 @@ class MoyaSugarProviderTests: XCTestCase {
       "Accept": "application/json",
     ])
   }
-
 }
