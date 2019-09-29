@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MoyaSugar'
-  s.version          = '1.2.0'
+  s.version          = '1.3.0'
   s.summary          = '🍯 Syntactic sugar for Moya'
   s.homepage         = 'https://github.com/devxoul/MoyaSugar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
