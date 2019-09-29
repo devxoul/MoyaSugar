@@ -13,7 +13,7 @@ jobs:
       matrix:
         env:
           - sdk: iphonesimulator13.0
-            destination: platform=iOS Simulator,name=iPhone XS,OS=13.0
+            destination: platform=iOS Simulator,name=iPhone 11 Pro,OS=13.0
 
           - sdk: macosx10.15
             destination: arch=x86_64
