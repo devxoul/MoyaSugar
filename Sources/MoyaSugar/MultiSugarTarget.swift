@@ -4,7 +4,7 @@ import Moya
 public enum MultiSugarTarget: SugarTargetType {
   case target(SugarTargetType)
 
-  var target: SugarTargetType {
+  public var target: SugarTargetType {
     switch self {
     case let .target(target):
       return target
