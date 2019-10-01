@@ -19,6 +19,14 @@ public enum MultiSugarTarget: SugarTargetType {
     return self.target.baseURL
   }
 
+  public var url: URL {
+    return self.target.url
+  }
+
+  public var defaultURL: URL {
+    return self.target.defaultURL
+  }
+
   public var route: Route {
     return self.target.route
   }
