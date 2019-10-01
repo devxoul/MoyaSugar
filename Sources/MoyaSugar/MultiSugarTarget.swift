@@ -4,6 +4,10 @@ import Moya
 public enum MultiSugarTarget: SugarTargetType {
   case target(SugarTargetType)
 
+  public init(_ target: SugarTargetType) {
+    self = .target(target)
+  }
+
   public var target: SugarTargetType {
     switch self {
     case let .target(target):
