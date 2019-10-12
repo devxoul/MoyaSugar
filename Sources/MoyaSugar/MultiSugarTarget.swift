@@ -39,6 +39,14 @@ public enum MultiSugarTarget: SugarTargetType {
     return self.target.headers
   }
 
+  public var task: Task {
+    return self.target.task
+  }
+
+  public var validationType: ValidationType {
+    return self.target.validationType
+  }
+
   public var sampleData: Data {
     return self.target.sampleData
   }
