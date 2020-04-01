@@ -31,6 +31,7 @@ open class MoyaSugarProvider<Target: SugarTargetType>: MoyaProvider<Target> {
       requestClosure: requestClosure,
       stubClosure: stubClosure,
       callbackQueue: callbackQueue,
+      session: session,
       plugins: plugins,
       trackInflights: trackInflights
     )
